@@ -153,3 +153,61 @@ h3{margin:0;font:800 24px/1.15 var(--display);letter-spacing:-.025em}
   html{scroll-behavior:auto}
   .marquee-track,.badge svg,h1 i{animation:none}
 }
+
+
+/* ---------- project visual previews ---------- */
+.project-preview{position:relative;min-height:220px;overflow:hidden;border-bottom:var(--bw) solid var(--ink);padding:18px}
+.preview-browser{height:24px;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(17,17,17,.25);font-size:10px;font-weight:700;letter-spacing:.04em}
+.preview-browser i{width:7px;height:7px;border:1px solid var(--ink);border-radius:50%}
+.preview-browser span{margin-left:8px}
+.preview-showroom{background:#e9e5dc}
+.preview-car{margin:18px 8px 0;padding:15px;background:#f8f5ed;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);min-height:118px}
+.preview-car b{font-size:10px;letter-spacing:.16em}
+.preview-car strong{display:block;margin-top:8px;font:800 clamp(23px,3vw,34px)/.95 var(--display);letter-spacing:-.04em}
+.preview-car small{display:inline-block;margin-top:10px;padding:5px 8px;background:var(--orange);font-size:9px;font-weight:800}
+.preview-car-list{display:flex;gap:8px;margin:14px 8px 0}
+.preview-car-list span{height:22px;flex:1;background:#c8c4bb;border:1px solid var(--ink)}
+.preview-sport{background:#d8f0e8}
+.sport-heading{margin:18px 8px 12px;font:700 22px/.95 var(--display);letter-spacing:-.04em}
+.sport-heading b{font-size:30px}
+.sport-courts{display:flex;gap:7px;margin:0 8px}
+.sport-courts span{flex:1;padding:10px 4px;text-align:center;background:#fffaf0;border:2px solid var(--ink);font-size:9px;font-weight:800}
+.sport-book{display:inline-block;margin:12px 8px 0;padding:7px 10px;background:var(--blue);color:white;font-size:10px;font-weight:800}
+.preview-todo{display:flex;align-items:center;justify-content:center;gap:24px;background:#f4df9d}
+.todo-phone{width:132px;min-height:190px;padding:13px 11px;background:#fffaf0;border:3px solid var(--ink);border-radius:18px;box-shadow:5px 5px 0 var(--ink)}
+.todo-notch{width:38px;height:5px;margin:0 auto 13px;border-radius:99px;background:var(--ink)}
+.todo-phone small{font-size:7px;font-weight:800;letter-spacing:.1em}
+.todo-phone>b{display:block;margin:3px 0 12px;font:800 22px var(--display)}
+.todo-task{display:flex;align-items:center;gap:6px;margin:7px 0;font-size:8px;font-weight:700}
+.todo-task i{width:11px;height:11px;border:1.5px solid var(--ink);border-radius:3px}
+.todo-side{font:700 17px/1.05 var(--display);letter-spacing:-.03em}
+.todo-side b{font-size:23px}
+.preview-invite{display:grid;place-items:center;background:#e8dfd0}
+.invite-card{width:min(240px,85%);min-height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;background:#f8f3e9;border:1px solid #8a7966;outline:5px solid #f8f3e9;box-shadow:0 0 0 6px #8a7966;color:#51483d}
+.invite-card small{font-size:8px;letter-spacing:.2em}
+.invite-card strong{font:italic 42px/1 Georgia,serif}
+.invite-card span{font:italic 12px Georgia,serif}
+.invite-card b{font-size:9px;letter-spacing:.18em}
+
+/* ---------- expanded contact ---------- */
+.contact-area{display:grid;gap:28px;margin-top:clamp(70px,9vw,120px)}
+.contact-info{padding:clamp(26px,5vw,56px);background:var(--white)}
+.contact-info h2{display:block;margin:0 0 26px;font-size:clamp(54px,9vw,104px);line-height:.98}
+.contact-kicker{margin:0 0 14px;font-size:13px;font-weight:800;letter-spacing:.12em}
+.contact-detail{padding:16px 0;border-bottom:2px solid var(--ink);display:flex;flex-direction:column;gap:5px}
+.contact-detail:last-child{border-bottom:0}
+.detail-label{font-size:12px;font-weight:800;letter-spacing:.08em}
+.contact-detail a,.contact-detail>span:last-child{font-size:clamp(18px,2.6vw,24px);font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.contact-detail a:hover{text-decoration:underline;text-underline-offset:4px}
+.contact-cta{padding:clamp(28px,5vw,58px);background:var(--yellow);border:var(--bw) solid var(--ink);box-shadow:var(--shadow);color:var(--ink)}
+.contact-cta h2{display:block;margin:0 0 22px;font-size:clamp(42px,8vw,88px);line-height:1.02}
+.contact-cta>p:not(.contact-kicker){max-width:38em;margin:0 0 26px;font-size:17px}
+.contact-cta .mail{background:var(--orange);font-size:clamp(17px,2.4vw,24px)}
+.availability{padding:clamp(24px,4vw,42px);background:#8fe3d4;border:var(--bw) solid var(--ink);box-shadow:var(--shadow)}
+.availability p{display:flex;align-items:center;gap:12px;margin:8px 0;font-size:clamp(17px,2.4vw,23px);font-weight:700}
+.availability p span{font-size:1.4em;font-weight:800}
+@media (min-width:760px){
+  .contact-area{grid-template-columns:1fr 1fr}
+  .contact-info{grid-row:span 2}
+  .contact-cta,.availability{align-self:stretch}
+}
